@@ -1,0 +1,20 @@
+# vim: set ft=gitconfig
+#
+[push]
+  default = matching
+
+[user]
+  name = Florian Baumann
+  email = flo@noqqe.de
+
+[alias]
+  quick-stats = ! /usr/local/bin/git-quick-stats
+
+[commit]
+  template = ~/.gitconf/message.txt
+
+[color]
+  ui = auto
+
+[diff]
+  indentHeuristic = true
