@@ -3,18 +3,62 @@
 [push]
   default = matching
 
-[user]
-  name = Florian Baumann
-  email = flo@noqqe.de
+[include]
+
+  # color schemes
+  path = ~/.gitconf/colors
+
+  # local git config for overwrites
+  path = ~/.gitconfig.local
 
 [alias]
+
+  # show stats
   quick-stats = ! /usr/local/bin/git-quick-stats
 
+  # show repo url
+  cloneurl = config --get remote.origin.url
+
+  # copy and paste rawlog
+  rawlog = log --format=\"format:commit %H%nAuthor:%an%n%n%B%n\"
+
+  # find what commit a file was added
+  # usage: `git whatadded -- foo.c`
+  whatadded = log --follow --diff-filter=A --find-renames=40%
+
 [commit]
+
+  # nice default template
   template = ~/.gitconf/message.txt
 
 [color]
+
+  # have colors by default
   ui = auto
 
 [diff]
+
+  # experimental feature to show better diffs
   indentHeuristic = true
+
+  # make output nice
+  suppressBlankEmpty = true
+
+[help]
+
+  autocorrect = 1
+
+[core]
+
+  # win/unix newlines
+  autocrlf = input
+
+  # remove all kinds of whitespace
+  whitespace = trailing-space,-space-before-tab,indent-with-non-tab,cr-at-eol
+
+[status]
+
+  # god damn submodules to be shown in status
+  submodulesummary = true
+
+
