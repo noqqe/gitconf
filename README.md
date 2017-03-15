@@ -4,7 +4,7 @@ Do not use this before reading and understanding what it does.
 # Usage
 
 ```
-git clone github.com/noqqe/gitconf ~/.gitconf
+git clone https://github.com/noqqe/gitconf.git ~/.gitconf
 ln -s .gitconf/config .gitconfig
 ```
 
