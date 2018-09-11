@@ -34,7 +34,7 @@
 [color]
 
   # have colors by default
-  ui = auto
+	ui = true
 
 [diff]
 
@@ -55,6 +55,7 @@
 
   # remove all kinds of whitespace
   whitespace = trailing-space,-space-before-tab,indent-with-non-tab,cr-at-eol
+	pager = diff-so-fancy | less --tabs=2 -RFX
 
 [status]
 
@@ -62,3 +63,15 @@
   submodulesummary = true
 
 
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
