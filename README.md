@@ -5,7 +5,7 @@ Do not use this before reading and understanding what it does.
 
 ```
 git clone https://github.com/noqqe/gitconf.git ~/.gitconf
-ln -s .gitconf/config .gitconfig
+ln -s ~/.gitconf/config ~/.gitconfig
 ```
 
 Poor little bastards...
